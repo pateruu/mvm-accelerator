@@ -1,2 +1,17 @@
-# mvm-accelerator
-8-lane matrix-vector multiplication accelerator in SystemVerilog with parallel DSP-based dot product units and FSM control.
+# Matrix-Vector Multiplication (MVM) Engine
+
+## Overview
+An **8-lane matrix-vector multiplication (MVM) accelerator** in SystemVerilog inspired by Microsoft BrainWave.  
+Each lane uses **8 DSP blocks** for parallel multiplications, with pipelined dot product and accumulation units.
+
+## Features
+- 8-lane parallel MVM architecture.
+- 8 DSP blocks per lane for high throughput.
+- FSM-based control for sequencing memory reads and coordinating accumulation.
+- Verified correctness with a parameterized testbench.
+- Achieves **150+ MHz throughput** on FPGA (Vivado synthesis).
+
+## Usage
+1. Open in **Vivado**.
+2. Load `rtl/` files and run synthesis.  
+3. Simulate with `tb/` testbench to verify outputs.  
