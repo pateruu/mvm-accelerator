@@ -12,6 +12,6 @@ Each lane uses **8 DSP blocks** for parallel multiplications, with pipelined dot
 - Achieves **150+ MHz throughput** on FPGA (Vivado synthesis).
 
 ## Usage
-1. Open in **Vivado**.
-2. Load `rtl/` files and run synthesis.  
-3. Simulate with `tb/` testbench to verify outputs.  
+1. Open in **Vivado** 
+2. Run synthesis and implementation.
+3. Run simulation with the testbench in `tb/` to verify functionality.
